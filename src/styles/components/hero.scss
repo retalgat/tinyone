@@ -18,6 +18,7 @@
         margin: 0;
         font-size: 48px;
         font-weight: bold;
+        text-transform: capitalize;
     }
 
     @include e(paragraph) {
