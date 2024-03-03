@@ -1,0 +1,34 @@
+// Hero
+
+@include b(hero) {
+    position: relative;
+    display: grid;
+    place-items: center;
+    min-height: 100%;
+    padding-block: 80px;
+    background-color: var(--color-back-primary);
+    color: var(--color-text-primary);
+    text-align: center;
+
+    @include e(container) {
+        --container-width: 520px;
+    }
+
+    @include e(title) {
+        margin: 0;
+        font-size: 48px;
+        font-weight: bold;
+    }
+
+    @include e(paragraph) {
+        margin-block: 12px 40px;
+        font-size: 20px;
+    }
+
+    @include e(icon) {
+        position: absolute;
+        left: 50%;
+        bottom: 5%;
+        transform: translateX(-50%);
+    }
+}

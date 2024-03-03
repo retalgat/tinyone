@@ -1,0 +1,20 @@
+// Button
+
+@include b(button) {
+    display: inline-flex;
+    padding: 10px 75px;
+    background-color: transparent;
+    border: 2px solid currentColor;
+    font-family: inherit;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--color-text);
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--color-text);
+        border-color: transparent;
+        color: var(--color-back);
+    }
+}

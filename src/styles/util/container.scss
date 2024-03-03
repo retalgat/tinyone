@@ -1,0 +1,11 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Container
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+@include b(container) {
+    --container-width: 940px;
+    
+    width: 100%;
+    max-width: calc(var(--container-width) + 40px);
+    margin-block: auto;
+    padding-inline: 20px;
+}

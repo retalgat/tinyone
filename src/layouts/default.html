@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html class="layout" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{#if title}}{{title}} | {{/if}}Tinyone</title>
+    <link rel="icon" href="{{root}}assets/favicons/favicon.ico" sizes="16x16">
+    <link rel="icon" href="{{root}}assets/favicons/icon-16.png" type="image/png" sizes="16x16">
+    <link rel="icon" href="{{root}}assets/favicons/icon-32.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="{{root}}assets/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="{{root}}assets/favicons/icon-180.png">
+    <link rel="manifest" href="{{root}}manifest.webmanifest">
+    <link rel="stylesheet" href="{{root}}assets/css/app.css">
+</head>
+<body class="layout__body">
+    {{> body }}
+    
+    <script src="{{root}}assets/scripts/index.js"></script>
+</body>
+</html>
