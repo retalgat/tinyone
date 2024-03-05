@@ -1,0 +1,21 @@
+---
+- title: Basic
+  desc: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  price: Free
+  period: free forever
+  button: Get free now
+  icon: tablet
+
+- title: Standard
+  desc: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  price: $99
+  period: month
+  button: Upgrade
+  icon: laptop
+
+- title: Enterprise
+  desc: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  price: $199
+  period: month
+  button: Learn more
+  icon: desktop

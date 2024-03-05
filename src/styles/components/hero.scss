@@ -21,9 +21,14 @@
         text-transform: capitalize;
     }
 
-    @include e(paragraph) {
+    @include e(desc) {
         margin-block: 12px 40px;
         font-size: 20px;
+    }
+
+    @include e(button) {
+        min-width: 256px;
+        font-size: 22px;
     }
 
     @include e(icon) {

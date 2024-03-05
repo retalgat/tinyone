@@ -1,0 +1,29 @@
+<section class="section" id="features">
+    <div class="section__container container">
+        <h2 class="section__title">
+            Tinyone features
+        </h2>
+        <p class="section__desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.
+        </p>
+        <ul class="feature-list">
+            {{#each features}}
+            <li class="feature-list__item">
+                <div class="feature">
+                    <span class="feature__icon icon">
+                        <svg width="36" height="36" aria-hidden="true">
+                            <use href="{{root}}assets/icons/sprite.svg#icon-{{icon}}"></use>
+                        </svg>
+                    </span>
+                    <h3 class="feature__title">
+                        {{ title }}
+                    </h3>
+                    <p class="feature__desc">
+                        {{ desc }}
+                    </p>
+                </div>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+</section>

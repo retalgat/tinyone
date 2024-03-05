@@ -1,0 +1,24 @@
+---
+- title: Fully Responsive
+  desc: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.
+  icon: tablet
+
+- title: Fully Layered PSD
+  desc: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.
+  icon: layer-group
+
+- title: Font Awesome Icons
+  desc: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.
+  icon: folder
+
+- title: HTML3 & CSS3
+  desc: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.
+  icon: code
+
+- title: Email Template
+  desc: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.
+  icon: envelope
+  
+- title: Free to download
+  desc: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.
+  icon: bookmark

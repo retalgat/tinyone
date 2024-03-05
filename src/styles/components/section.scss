@@ -1,0 +1,36 @@
+// Section
+
+@include b(section) {
+    padding-block: 60px;
+
+    @include e(title) {
+        margin: 0;
+        font-size: 32px;
+        font-weight: bold;
+        text-transform: capitalize;
+        text-align: center;
+    }
+
+    @include e(desc) {
+        margin-block: 12px 40px;
+        font-size: 20px;
+        text-align: center;
+        color: var(--color-text-secondary);
+    }
+
+    @media (min-width: 660px) {
+        padding-block: 80px;
+
+        @include e(desc) {
+            margin-block-end: 60px;
+        }
+    }
+
+    @media (min-width: 980px) {
+        padding-block: 100px;
+
+        @include e(desc) {
+            margin-block-end: 80px;
+        }
+    }
+}

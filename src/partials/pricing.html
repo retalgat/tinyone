@@ -1,0 +1,38 @@
+<section class="section">
+    <div class="section__container container">
+        <h2 class="section__title">
+            Pricing and free trial
+        </h2>
+        <p class="section__desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.
+        </p>
+        <ul class="price-list">
+            {{#each pricing}}
+            <li class="price-list__item">
+                <div class="price">
+                    <span class="price__icon icon">
+                        <svg class="price__svg" width="44" height="44" aria-hidden="true">
+                            <use href="{{root}}assets/icons/sprite.svg#icon-{{icon}}"></use>
+                        </svg>
+                    </span>
+                    <h3 class="price__title">
+                        {{ title }}
+                    </h3>
+                    <p class="price__desc">
+                        {{ desc }}
+                    </p>
+                    <p class="price__price">
+                        {{ price }}
+                    </p>
+                    <p class="price__period">
+                        {{ period }}
+                    </p>
+                    <button class="price__button button" type="button">
+                        {{ button }}
+                    </button>
+                </div>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+</section>
