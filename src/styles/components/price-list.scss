@@ -1,0 +1,15 @@
+// Price List
+
+@include b(price-list) {
+    display: grid;
+    justify-content: center;
+    row-gap: 80px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    @media (min-width: 660px) {
+        grid-template-columns: repeat(3, 200px);
+        column-gap: 30px;
+    }
+}

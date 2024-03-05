@@ -1,0 +1,91 @@
+// Price
+
+@include b(price) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+
+    @include e(icon) {
+        width: 100px;
+        height: 100px;
+        margin-block: 0 20px;
+        background-color: var(--color-back-secondary);
+        border-radius: 50%;
+    }
+
+    @include e(svg) {
+        align-self: center;
+        width: 100%;
+    }
+
+    @include e(title) {
+        margin-block: 0 12px;
+        font-size: 24px;
+    }
+
+    @include e(desc) {
+        flex-grow: 1;
+        margin-block: 0 20px;
+        font-size: 16px;
+        color: var(--color-text-secondary);
+    }
+
+    @include e(price) {
+        margin-block: 0 4px;
+        font-size: 32px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    @include e(period) {
+        position: relative;
+        margin-block: 0 20px;
+        padding-block-start: 8px;
+        font-size: 16px;
+        color: var(--color-text-secondary);
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+
+            width: 50px;
+            height: 2px;
+            background-color: var(--color-text);
+        }
+    }
+    
+    @media (max-width: 659px) {
+        @include e(button) {
+            width: 100%;
+        }
+    }
+
+    @media (min-width: 660px) {
+        @include e(title) {
+            margin-block: 0 20px;
+        }
+
+        @include e(desc) {
+            margin-block: 0 40px;
+            font-size: 14px;
+        }
+
+        @include e(period) {
+            position: relative;
+            margin-block: 0 40px;
+            padding-block-start: 8px;
+            font-size: 16px;
+            color: var(--color-text-secondary);
+        }
+
+        @include e(button) {
+            width: 140px;
+            padding-inline: 12px;
+        }
+    }
+}
