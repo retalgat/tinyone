@@ -1,0 +1,32 @@
+<section class="section" id="works">
+    <div class="section__container container">
+        <h2 class="section__title">
+            Our works
+        </h2>
+        <p class="section__desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.
+        </p>
+        <ul class="work-list">
+            {{#each works}}
+            <li class="work-list__item">
+                <div class="work">
+                    <div class="work__image-container">
+                        <picture>
+                            <source srcset="{{root}}assets/images/works/{{@index}}.avif 1x, {{root}}assets/images/works/{{@index}}@2x.avif 2x" type="image/avif">
+                            <source srcset="{{root}}assets/images/works/{{@index}}.webp 1x, {{root}}assets/images/works/{{@index}}@2x.webp 2x" type="image/webp">
+                            <img class="work__image" srcset="{{root}}assets/images/works/{{@index}}.jpg 1x, {{root}}assets/images/works/{{@index}}@2x.jpg 2x" 
+                                src="{{root}}assets/images/works/{{@index}}@2x.jpg" width="220" height="220" alt="">
+                        </picture>
+                    </div>
+                    <h3 class="work__title">
+                        {{ title }}
+                    </h3>
+                    <p class="work__desc">
+                        {{ desc }}
+                    </p>
+                </div>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+</section>
