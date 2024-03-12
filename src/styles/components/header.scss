@@ -1,0 +1,55 @@
+// Header
+
+@include b(header) {
+    position: fixed;
+    inset: 0 0 auto;
+    z-index: 1;
+
+    padding-block: 20px;
+    background-color: var(--color-back-primary);
+    color: var(--color-text-secondary);
+    transition: padding-block 0.2s ease-out, box-shadow 0.2s ease-out;
+
+    @include e(container) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        row-gap: 10px;
+    }
+
+    @include e(menu-button) {
+        justify-self: start;
+
+        padding: 8px;
+        border: none;
+        color: var(--color-text-primary);
+
+        &:hover {
+            background-color: transparent;
+            color: var(--color-text);
+        }
+    }
+
+    @include e(logo) {
+        justify-self: center;
+    }
+
+    @include e(social-icons) {
+        justify-self: end;
+    }
+
+    @media (max-width: 659px) {
+        @include e(social-icons) {
+            display: none;
+        }
+    }
+
+    @media (min-width: 660px) {
+        padding-block: 60px;
+    }
+
+    @include m(scroll) {
+        padding-block: 20px;
+        box-shadow: 0 1px 4px rgba($color: #000000, $alpha: 0.1);
+    }
+}

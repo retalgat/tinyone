@@ -1,0 +1,19 @@
+// Social Icons
+
+@include b(social-icons) {
+    display: flex;
+    gap: 4px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    @include e(link) {
+        display: flex;
+        padding: 8px;
+        color: var(--color-text-primary);
+
+        &:hover {
+            color: var(--color-text);
+        }
+    }
+}
