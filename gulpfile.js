@@ -3,6 +3,7 @@ import gulpif from 'gulp-if';
 import babel from 'gulp-babel';
 import panini from 'panini';
 import htmlmin from 'gulp-htmlmin';
+import typograf from 'gulp-typograf';
 import terser from 'gulp-terser';
 import * as dartsass from 'sass';
 import gulpsass from 'gulp-sass';
@@ -28,6 +29,9 @@ export const pages = () => {
             layouts: 'src/layouts',
             partials: 'src/partials',
             data: 'src/data'
+        }))
+        .pipe(typograf({
+            locale: 'en-US'
         }))
         .pipe(htmlmin({
             removeComments: true,

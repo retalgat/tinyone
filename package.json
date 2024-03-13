@@ -27,6 +27,7 @@
     "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-terser": "^2.1.0",
+    "gulp-typograf": "^4.1.0",
     "has-flag": "^5.0.1",
     "panini": "^1.7.2",
     "sass": "^1.71.1"
