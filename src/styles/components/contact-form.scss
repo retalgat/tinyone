@@ -7,4 +7,12 @@
     row-gap: 20px;
     max-width: 480px;
     margin-inline: auto;
+
+    @media (max-width: 659px) {
+        row-gap: 10px;
+
+        @include e(button) {
+            width: 100%;
+        }
+    }
 }
