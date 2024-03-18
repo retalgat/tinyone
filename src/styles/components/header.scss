@@ -21,12 +21,18 @@
         justify-self: start;
 
         padding: 8px;
+        background-color: transparent;
         border: none;
-        color: var(--color-text-primary);
+        color: var(--color-text);
 
         &:hover {
             background-color: transparent;
-            color: var(--color-text);
+            color: var(--color-text-primary);
+        }
+
+        &:focus-visible {
+            outline-color: var(--color-text);
+            outline-offset: 0;
         }
     }
 

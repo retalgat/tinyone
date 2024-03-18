@@ -29,6 +29,10 @@
     @include e(button) {
         min-width: 256px;
         font-size: 22px;
+
+        &:focus-visible {
+            outline-color: var(--color-text);
+        }
     }
 
     @include e(icon) {

@@ -10,10 +10,14 @@
     @include e(link) {
         display: flex;
         padding: 8px;
-        color: var(--color-text-primary);
+        color: var(--color-text);
 
         &:hover {
-            color: var(--color-text);
+            color: var(--color-text-primary);
+        }
+
+        &:focus-visible {
+            outline: 3px solid var(--color-text);
         }
     }
 }
