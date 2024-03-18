@@ -10,6 +10,7 @@
     @include e(link) {
         display: flex;
         padding: 8px;
+        border-radius: 4px;
         color: var(--color-text);
 
         &:hover {
