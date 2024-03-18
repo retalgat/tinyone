@@ -1,0 +1,10 @@
+// Contact Form
+
+@include b(contact-form) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    max-width: 480px;
+    margin-inline: auto;
+}

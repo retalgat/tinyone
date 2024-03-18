@@ -1,0 +1,21 @@
+// Textarea
+
+@include b(textarea) {
+    width: 100%;
+    padding: 14px 16px;
+    background-color: var(--color-back);
+    border: 2px solid currentColor;
+    font-family: inherit;
+    font-size: 16px;
+    color: var(--color-text);
+    resize: vertical;
+
+    &::placeholder {
+        color: var(--color-text-secondary);
+    }
+
+    &:focus {
+        outline: 3px solid var(--color-back-primary);
+        outline-offset: 1px;
+    }
+}

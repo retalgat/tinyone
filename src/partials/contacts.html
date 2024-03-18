@@ -1,0 +1,43 @@
+<section class="section" id="contacts">
+    <div class="container">
+        <header class="section-header">
+            <h2 class="section-header__title">
+                Keep in touch with us
+            </h2>
+            <p class="section-header__desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.
+            </p>
+        </header>
+        <div class="section__layout">
+            <ul class="contact-list">
+                {{#each contacts}}
+                <li class="contact-list__item">
+                    <div class="contact">
+                        <span class="contact__icon icon">
+                            <svg width="26" height="26" aria-hidden="true">
+                                <use href="{{root}}assets/icons/sprite.svg#icon-{{icon}}"></use>
+                            </svg>
+                        </span>
+                        <h3 class="contact__title">
+                            {{ title }}
+                        </h3>
+                        <a class="contact__link" href="{{link}}">
+                            {{ desc }}
+                        </a>
+                    </div>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+        <div class="section__layout">
+            <form class="contact-form">
+                <input class="contact-form__input input" type="email" placeholder="Email" required>
+                <input class="contact-form__input input" type="text" placeholder="Full name" required>
+                <textarea class="contact-form__input textarea" rows="8" placeholder="Message" required></textarea>
+                <button class="contact-form__button button">
+                    Send message
+                </button>
+            </form>
+        </div>
+    </div>
+</section>

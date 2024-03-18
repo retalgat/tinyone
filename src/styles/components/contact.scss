@@ -1,0 +1,22 @@
+// Contact
+
+@include b(contact) {
+    text-align: center;
+
+    @include e(icon) {
+        margin-block-end: 16px;
+    }
+
+    @include e(title) {
+        margin: 0;
+        font-size: 24px;
+        font-weight: normal;
+    }
+
+    @include e(link) {
+        margin: 0;
+        font-size: 14px;
+        color: var(--color-text-secondary);
+        text-decoration: none;
+    }
+}

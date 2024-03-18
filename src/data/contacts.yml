@@ -1,0 +1,15 @@
+---
+- title: Address
+  desc: 66, Dang Van ngu, Dong Da, Ha noi, Vietnam
+  link: https://maps.app.goo.gl/3ejuv7AiatFLuFzK6
+  icon: location-dot-solid
+
+- title: Email
+  desc: contact@halovietnam.com
+  link: mailto:contact@halovietnam.com
+  icon: envelope-solid
+
+- title: Phone
+  desc: +844 1234 56789
+  link: tel:+844123456789
+  icon: phone-solid

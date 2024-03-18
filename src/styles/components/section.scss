@@ -3,11 +3,29 @@
 @include b(section) {
     padding-block: 60px;
 
+    @include e(layout) {
+        &:not(:last-child) {
+            margin-block-end: 40px;
+        }
+    }
+
     @media (min-width: 660px) {
         padding-block: 80px;
+
+        @include e(layout) {
+            &:not(:last-child) {
+                margin-block-end: 60px;
+            }
+        }
     }
 
     @media (min-width: 980px) {
         padding-block: 100px;
+
+        @include e(layout) {
+            &:not(:last-child) {
+                margin-block-end: 80px;
+            }
+        }
     }
 }
