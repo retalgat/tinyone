@@ -1,0 +1,21 @@
+---
+tinyone:
+  - title: Examples
+  - title: Shop
+  - title: License
+
+company:
+  - title: Contact
+  - title: About
+  - title: Privacy
+  - title: Terms
+
+product:
+  - title: Download
+  - title: Support
+  - title: Documents
+
+other:
+  - title: Media
+  - title: Blog
+  - title: Forums

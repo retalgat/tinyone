@@ -1,0 +1,14 @@
+// Footer Form
+
+@include b(footer-form) {
+    display: grid;
+    gap: 10px;
+    
+    @include e(input) {
+        border-color: transparent;
+    }
+
+    @media (min-width: 660px) {
+        grid-template-columns: 1fr min-content;
+    }
+}

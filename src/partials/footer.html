@@ -1,0 +1,75 @@
+<footer class="footer section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-header__title">
+                Sign up for our newsletter
+            </h2>
+            <p class="section-header__desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.
+            </p>
+            <form class="footer-form">
+                <input class="footer-form__input input" type="email" placeholder="Enter your email to update" required>
+                <button class="footer-form__button button button--accent">
+                    Submit
+                </button>
+            </form>
+        </div>
+        <div class="footer__grid">
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <ul class="footer-list">
+                        {{#each footer/tinyone}}
+                        <li class="footer-list__item">
+                            <a class="footer-list__link" href="#">
+                                {{ title }}
+                            </a>
+                        </li>
+                        {{/each}}
+                    </ul>
+                </li>
+                <li class="footer__item">
+                    <ul class="footer-list">
+                        {{#each footer/company}}
+                        <li class="footer-list__item">
+                            <a class="footer-list__link" href="#">
+                                {{ title }}
+                            </a>
+                        </li>
+                        {{/each}}
+                    </ul>
+                </li>
+                <li class="footer__item">
+                    <ul class="footer-list">
+                        {{#each footer/product}}
+                        <li class="footer-list__item">
+                            <a class="footer-list__link" href="#">
+                                {{ title }}
+                            </a>
+                        </li>
+                        {{/each}}
+                    </ul>
+                </li>
+                <li class="footer__item">
+                    <ul class="footer-list">
+                        {{#each footer/other}}
+                        <li class="footer-list__item">
+                            <a class="footer-list__link" href="#">
+                                {{ title }}
+                            </a>
+                        </li>
+                        {{/each}}
+                    </ul>
+                </li>
+            </ul>
+            <address class="footer__address">
+                HALOVIETNAM LTD
+                <br>
+                <a class="footer__link" href="https://maps.app.goo.gl/3ejuv7AiatFLuFzK6">66, Dang Van ngu, Dong Da,<br>Ha noi, Vietnam</a>
+                <br>
+                <a class="footer__link" href="mailto:contact@halovietnam.com">contact@halovietnam.com</a>
+                <br>
+                <a class="footer__link" href="tel:+84435149182">+844 35149182</a>
+            </address>
+        </div>
+    </div>
+</footer>
