@@ -40,12 +40,12 @@
         justify-self: center;
     }
 
-    @include e(social-icons) {
+    @include e(icons) {
         justify-self: end;
     }
 
     @media (max-width: 659px) {
-        @include e(social-icons) {
+        @include e(icons) {
             display: none;
         }
     }

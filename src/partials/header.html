@@ -11,11 +11,11 @@
             <img class="logo__image" src="{{root}}assets/images/logo.svg" width="42" height="42" alt="Logo">
             <p class="logo__title">tinyone</p>
         </a>
-        <ul class="header__social-icons social-icons">
-            {{#each social-icons}}
-            <li class="social-icons__item">
-                <a class="social-icons__link" href="#" title="{{title}}">
-                    <span class="social-icons__icon icon">
+        <ul class="header__icons header-icons">
+            {{#each icons}}
+            <li class="header-icons__item">
+                <a class="header-icons__link" href="#" title="{{title}}">
+                    <span class="header-icons__icon icon">
                         <svg width="26" height="26" aria-hidden="true">
                             <use href="{{root}}assets/icons/sprite.svg#icon-{{icon}}"></use>
                         </svg>
