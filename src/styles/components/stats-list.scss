@@ -1,0 +1,15 @@
+// Stats List
+
+@include b(stats-list) {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 160px);
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    @media (min-width: 660px) {
+        grid-template-columns: repeat(4, 160px);
+    }
+}

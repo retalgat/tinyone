@@ -1,0 +1,64 @@
+// Review
+
+@include b(review) {
+    display: block;
+    text-align: center;
+
+    @include e(image) {
+        display: block;
+        margin-inline: auto;
+        margin-block-end: 10px;
+        border-radius: 50%;
+    }
+
+    @include e(title) {
+        margin: 0;
+        margin-block-end: 4px;
+        font-size: 22px;
+    }
+
+    @include e(desc) {
+        margin: 0;
+        font-size: 16px;
+        color: var(--color-text-secondary);
+    }
+
+    @include e(blockquote) {
+        max-width: 520px;
+        margin: 24px auto 0;
+        font-size: 20px;
+        color: var(--color-text-secondary);
+    }
+
+    @include e(quote) {
+        margin: 0;
+    }
+
+    @media (min-width: 660px) {
+        @include e(blockquote) {
+            position: relative;
+    
+            &::before {
+                content: "„";
+                position: absolute;
+                bottom: 12px;
+                left: -32px;
+
+                font-size: 50px;
+                font-weight: bold;
+                line-height: 0;
+            }
+    
+            &::after {
+                content: "“";
+                position: absolute;
+                top: 12px;
+                right: -32px;
+
+                font-size: 50px;
+                font-weight: bold;
+                line-height: 0;
+            }
+        }
+    }
+}

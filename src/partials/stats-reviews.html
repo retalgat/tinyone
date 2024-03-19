@@ -1,0 +1,53 @@
+<section class="section" id="stats-reviews">
+    <div class="container">
+        <header class="section-header">
+            <h2 class="section-header__title">
+                Stats & Reviews
+            </h2>
+            <p class="section-header__desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.
+            </p>
+        </header>
+        <div class="section__layout">
+            <ul class="stats-list">
+                {{#each stats}}
+                <li class="stats-list__item">
+                    <div class="stats">
+                        <span class="stats__icon icon">
+                            <svg width="48" height="48" aria-hidden="true">
+                                <use href="{{root}}assets/icons/sprite.svg#icon-{{icon}}"></use>
+                            </svg>
+                        </span>
+                        <h3 class="stats__title">
+                            {{ title }}
+                        </h3>
+                        <p class="stats__desc">
+                            {{ desc }}
+                        </p>
+                    </div>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+        <div class="section__layout">
+            <div class="review">
+                <picture>
+                    <source srcset="{{root}}assets/images/users/hidden-120.avif 1x, {{root}}assets/images/users/hidden-240.avif 2x" type="image/avif">
+                    <source srcset="{{root}}assets/images/users/hidden-120.webp 1x, {{root}}assets/images/users/hidden-240.webp 2x" type="image/webp">
+                    <img class="review__image" srcset="{{root}}assets/images/users/hidden-120.jpg 1x, {{root}}assets/images/users/hidden-240.jpg 2x" src="{{root}}assets/images/users/hidden-240.jpg" width="120" height="120" alt="Hidden user">
+                </picture>
+                <h3 class="review__title">
+                    John Doe
+                </h3>
+                <p class="review__desc">
+                    From WordPress
+                </p>
+                <blockquote class="review__blockquote">
+                    <p class="review__quote">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.
+                    </p>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,16 @@
+---
+- title: Products
+  desc: 20
+  icon: puzzle-piece
+
+- title: Downloads
+  desc: 120 000
+  icon: cloud-arrow-down
+
+- title: Customers
+  desc: 1 200
+  icon: users
+
+- title: Likes
+  desc: 900
+  icon: thumbs-up
