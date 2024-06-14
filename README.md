@@ -1,6 +1,6 @@
 # Tinyone
 
-This project is available at https://abdurashidov.github.io/tinyone/
+This project is available at https://retalgat.github.io/tinyone/
 
 ## Installation
 
